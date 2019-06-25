@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import './Navigation.css';
 
 export class Navigation extends Component {
@@ -6,9 +7,9 @@ export class Navigation extends Component {
         return (
             <div>
                 <ul className="nav justify-content-center">
-                    <li className="nav-link">About</li>
-                    <li className="nav-link">Project</li>
-                    <li className="nav-link">Contact</li>
+                    <li className="nav-item"><Link to={'/about'} className="nav-link">About</Link></li>
+                    <li className="nav-item"><Link to={'/projects'} className="nav-link">Projects</Link></li>
+                    <li className="nav-item"><Link to={'/contact'} className="nav-link">Contact</Link></li>
                 </ul>
             </div>
         )

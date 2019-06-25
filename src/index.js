@@ -4,14 +4,21 @@ import { Route, BrowserRouter as Router } from 'react-router-dom'
 
 import './index.css';
 import App from './App';
+import About from './../src/components/About/About.js';
+import Projects from './../src/components/Projects/Projects.js';
+import Contact from './../src/components/Contact/Contact.js';
+
+
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const routing = (
     <Router>
     <div>
-      <Route exact path="/" component={App} />
+      <Route path="/" component={App} />
       <Route path="/about" component={About} />
+      <Route path='/projects' component={Projects} />
+      <Route path='/contact' component={Contact} />
     </div>
   </Router>
 );
