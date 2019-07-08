@@ -1,0 +1,13 @@
+.hobby-photo {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.hobby-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hobby-header {
+    margin: 30px;
+}

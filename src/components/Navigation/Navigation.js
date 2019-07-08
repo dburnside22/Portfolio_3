@@ -6,7 +6,7 @@ export class Navigation extends Component {
     render() {
         return (
             <div>
-                <ul className="nav justify-content-center">
+                <ul className="nav">
                     <li className="nav-item"><Link to={'/'} className="nav-link">Home</Link></li>
                     <li className="nav-item"><Link to={'/about'} className="nav-link">About</Link></li>
                     <li className="nav-item"><Link to={'/projects'} className="nav-link">Projects</Link></li>
