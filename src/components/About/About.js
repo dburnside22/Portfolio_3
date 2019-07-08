@@ -8,16 +8,18 @@ export class About extends Component {
         return (
             <div className='container'>
                 <h2>About Me...</h2>
-                <p> 
+                <p className='about-me-paragraph'> 
                     Front-End developer with experience building well tested scalable web applications 
                     from start to finish using Agile methodology. Skilled in using modern frameworks such as React and Angular, 
                     with experience in multiple backend configurations.  
                 </p>
 
-                <h3>Hobbies away from the keyboard</h3>
-                <Music />
-                <Chess />
-                <Gardening />
+                <h2 className='hobbies-afk'>Hobbies away from the keyboard</h2>
+                <div className='hobbies-components'>
+                    <Music />
+                    <Chess />
+                    <Gardening />
+                </div>
             </div>
         )
     }

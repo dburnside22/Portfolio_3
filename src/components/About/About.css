@@ -4,10 +4,45 @@
 }
 
 .hobby-div {
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
+.hobby-div > .hobby-desc, .hobby-div > img {
+    margin: auto auto;
+    padding: 12px;
+}
+
 .hobby-header {
-    margin: 30px;
+    text-align: center;
+}
+
+.about-me-paragraph{
+    font-size: 18px;
+}
+
+.hobbies-afk{
+    margin-top: 40px;
+}
+
+.light-gray-background {
+    background: #ececec;
+}
+
+
+@media only screen and (max-width: 767px){
+    .hobby-div{
+        grid-template-columns: 1fr;
+    }
+
+    .hobby-div img{
+        grid-row: 2;
+    }
+
+    .hobby-div > .hobby-desc{
+        margin-bottom: 20px;
+    }
+
+
 }
