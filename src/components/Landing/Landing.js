@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './Landing.css';
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import HomeCard from '../HomeCard/HomeCard';
 
 
 export class Landing extends Component {
@@ -11,30 +15,18 @@ export class Landing extends Component {
                     <div className="hero-text">
                         <h1>Daniel Burnside</h1>
                         <h3>Software Developer</h3>
+                        <h5><FontAwesomeIcon icon={faMapMarkerAlt} /> Austin, TX</h5>
+                        <div className='icons'>
+                            <a href='https://www.linkedin.com/in/daniel-burnside/'><FontAwesomeIcon icon={faLinkedin} /></a>
+                            <a href='https://github.com/dburnside22'><FontAwesomeIcon icon={faGithub}/></a>
+                        </div>
+
                     </div>
                 </div>
                 <div className="home-cards">
-                    <div className="card text-center">
-                        <div className="card-body">
-                            <h5 className="card-title">Special title treatment</h5>
-                            <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <Link to={"/about"} className="btn btn-primary">About</Link>
-                        </div>
-                    </div>
-                    <div className="card text-center">
-                        <div className="card-body">
-                            <h5 className="card-title">Special title treatment</h5>
-                            <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <Link to={"/projects"} className="btn btn-primary">Projects</Link>
-                        </div>
-                    </div>
-                    <div className="card text-center">
-                        <div className="card-body">
-                            <h5 className="card-title">Special title treatment</h5>
-                            <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <Link to={"/contact"} className="btn btn-primary">Contact</Link>
-                        </div>
-                    </div>
+                    < HomeCard link="/about" linkName="About" />
+                    < HomeCard link="/projects" linkName="Projects" />
+                    < HomeCard link="/contact" linkName="Contact" />
                 </div>
 
             </div>
