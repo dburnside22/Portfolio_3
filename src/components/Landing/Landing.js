@@ -12,7 +12,7 @@ export class Landing extends Component {
             <div>
                 <div className="hero-image">
                     <div className="hero-text">
-                        <h1>Daniel Burnside</h1>
+                        <h1 className=''>Daniel Burnside</h1>
                         <h3>Software Developer</h3>
                         <h5><FontAwesomeIcon icon={faMapMarkerAlt} /> Austin, TX</h5>
                         <div className='icons'>
