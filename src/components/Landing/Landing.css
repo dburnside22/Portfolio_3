@@ -38,7 +38,8 @@ body, html {
     box-shadow: 1px 1px 1px gray;
     margin: 10px;
     transition: 1s;
-}
+    background-color: #66a2fe;
+  }
 
 .home-cards .card .card-body {
   font-size: 50px;
