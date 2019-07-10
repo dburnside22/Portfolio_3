@@ -1,3 +1,92 @@
-.card {
-    width: 25%;
+.project-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.project-tracker-img{
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 3px black;
+
+}
+
+.project-tracker-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 0;
+    border: 3px solid gray;
+    border-radius: 5px;
+}
+
+.project-tracker-desc{
+    font-size: 18px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+.buttons button{
+    background: lightblue;
+    color: black;
+    border-radius: 20px;
+    padding: 3px 18px;
+}
+
+.project-tracker-tools-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+}
+
+.project-tracker-tools-list-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+}
+
+.project-tracker-tools-list > li {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.project-tracker-tools-list-3 > li {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.sabor-img {
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 3px black;
+}
+
+@media only screen and (max-width:700px){
+    .project-tracker-div {
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    .project-title {
+        padding: 12px 0;
+    }
+
+    .project-images {
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sabor-img-div {
+        grid-row: 1;
+    }
+
+    .project-tracker-img{
+        width: 100px;
+        height: 150px;
+    }
 }
