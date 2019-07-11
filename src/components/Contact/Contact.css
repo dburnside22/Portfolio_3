@@ -1,0 +1,17 @@
+.computer-photo{
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    position: absolute;
+    top: 28%;
+    right: 25%;
+    box-shadow: 2px 2px 5px black;
+}
+
+@media only screen and (max-width: 700px) {
+    .computer-photo{
+        width: 65%;
+        position: relative;
+        left: 25%;
+    }
+}
