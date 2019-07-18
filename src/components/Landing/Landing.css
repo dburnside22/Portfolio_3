@@ -28,31 +28,51 @@ body, html {
 }
 
 .home-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+}
+
+.home-cards .card-container {
+  margin: 10px;
+  border-radius: 10%;
+  transition: 1s;
+  background-color: #ececec;
+}
+
+.home-cards .card span {
+  width: 100%;
+  padding: 1em;
+  position: absolute;
+  height: 100%;
+  z-index: 0;
+  clip-path: circle(0% at 100% 0%);
+  background-color: #d1e3ff;
+  transition: 1s;
 }
 
 .home-cards .card {
-    box-shadow: 1px 1px 1px gray;
-    margin: 10px;
-    transition: 1s;
-    background-color: #66a2fe;
-  }
+  background-color: #ececec;
+}
 
 .home-cards .card .card-body {
   font-size: 50px;
   color: black;
+  position: relative;
+  z-index: 2;
 }
 
 a.card-body {
-  text-decoration: none;
   text-align: center;
 }
 
-.home-cards .card:hover {
-    background-color: #d1e3ff;
+a.card-body:hover {
+  text-decoration: none;
+}
+
+.home-cards .card:hover span {
+  clip-path: circle(150%);
 }
 
 .icons {
